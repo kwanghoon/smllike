@@ -3,7 +3,14 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: yapb-0.1.1@sha256:b237704b21cc03de7fcbd9dc2661f6e897cc5d9bad2ea0bc8203d63ab106113b,3025
+    pantry-tree:
+      size: 2093
+      sha256: d3d83d7b387aa210f2fb2540cbdc963b5a1d999d4da493e668396dbb2ea378db
+  original:
+    hackage: yapb-0.1.1
 snapshots:
 - completed:
     size: 531701
