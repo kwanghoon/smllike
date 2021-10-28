@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.31.2.
+-- This file has been generated from package.yaml by hpack version 0.34.4.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: b533299d61b5f6775a1c9239fa453e0e2581e769d38e8734db9cf792c5199047
+-- hash: cf8a1d92223d9d60b695457843cde4e8e070386338c360f04b239bfc605d37fc
 
 name:           smllike
 version:        0.1.0.0
@@ -51,7 +51,7 @@ executable smllike-exe
   build-depends:
       base >=4.7 && <5
     , smllike
-    , yapb >=0.1.1
+    , yapb >=0.1.3.3
   default-language: Haskell2010
 
 test-suite smllike-test
