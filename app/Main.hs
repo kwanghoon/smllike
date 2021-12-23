@@ -34,12 +34,18 @@ computeCand debug programTextUptoCursor programTextAfterCursor isSimpleMode = do
     `catch` \e -> case e :: ParseErrorWithLineCol Token AST of ParseErrorWithLineCol line column e -> do {
         (_, _, terminalListAfterCursor) <- lexingWithLineColumn lexerSpec line column programTextAfterCursor;
         handleParseError (
-          HandleParseError {
+          defaultHandleParseError {
               debugFlag=debug,
               searchMaxLevel=maxLevel,
               simpleOrNested=isSimpleMode,
               postTerminalList=terminalListAfterCursor,
-              nonterminalToStringMaybe=Nothing}) e
+              nonterminalToStringMaybe=Nothing }) e
+          -- HandleParseError {
+          --     debugFlag=debug,
+          --     searchMaxLevel=maxLevel,
+          --     simpleOrNested=isSimpleMode,
+          --     postTerminalList=terminalListAfterCursor,
+          --     nonterminalToStringMaybe=Nothing}) e
         })
     
 computeCand_ :: Bool -> String -> String -> IO [EmacsDataItem]
