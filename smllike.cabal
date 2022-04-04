@@ -49,7 +49,7 @@ executable smllike-exe
   build-depends:
       base >=4.7 && <5
     , smllike
-    , yapb >=0.2.2
+    , yapb >=0.2.3
   default-language: Haskell2010
 
 test-suite smllike-test
