@@ -37,7 +37,7 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - smllike
-    - yapb >= 0.2.3
+    - yapb >= 0.2.4
 
 tests:
   smllike-test:
