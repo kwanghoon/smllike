@@ -42,8 +42,8 @@ resolver: lts-16.4
 #
 # extra-deps: 
 extra-deps:
-#  - yapb-0.2.3
- - ../yapb
+  - yapb-0.2.5
+# - ../yapb
 
 # Override default flag values for local packages and extra-deps
 # flags: {}
