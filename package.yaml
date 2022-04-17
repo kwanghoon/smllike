@@ -21,6 +21,8 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
+- yapb >= 0.2.6
+- hspec
 
 library:
   source-dirs: src
@@ -37,12 +39,14 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - smllike
-    - yapb >= 0.2.5
 
 tests:
   smllike-test:
     main:                Spec.hs
-    source-dirs:         test
+    source-dirs:         
+    - test
+    - app/ast
+    - app
     ghc-options:
     - -threaded
     - -rtsopts
